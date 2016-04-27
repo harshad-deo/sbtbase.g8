@@ -15,5 +15,5 @@ My preferred scalastyle configuration is also included in this repository.
 ## To use
 
 1. Install [giter8](https://github.com/foundweekends/giter8)
-2. cd to your projects directory
-3. run `g8 harshad-deo/sbtbase`
+2. `cd` to your projects directory
+3. execute `g8 harshad-deo/sbtbase`
