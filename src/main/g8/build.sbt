@@ -43,7 +43,8 @@ scalacOptions ++= Seq(
   "-Ywarn-value-discard",
   "-Xlint",
   "-Ywarn-nullary-override",
-  "-Ywarn-nullary-unit"
+  "-Ywarn-nullary-unit",
+  "-Xfuture"
 )
 
 addCompilerPlugin("org.psywerx.hairyfotr" %% "linter" % "$lintCompilerPluginVersion$")
