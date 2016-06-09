@@ -47,6 +47,13 @@ scalacOptions ++= Seq(
   "-Xfuture"
 )
 
+initialCommands := """
+class Witness[T](val x: T)
+object Witness{
+  def apply[T](x: T): Witness[T] = new Witness(x)
+}
+"""
+
 addCompilerPlugin("org.psywerx.hairyfotr" %% "linter" % "$lintCompilerPluginVersion$")
 
 import TodoListPlugin._
