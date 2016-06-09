@@ -7,6 +7,12 @@ version := "$version$"
 fork := true
 coverageEnabled := true
 
+lazy val compilecheck = taskKey[Unit]("compile and then scalastyle")
+
+compilecheck in Compile := Def.sequential(compile in Compile, (scalastyle in Compile).toTask(""), 
+  (scapegoat in Compile)).value
+
+
 import scalariform.formatter.preferences._
 import com.typesafe.sbt.SbtScalariform
 import com.typesafe.sbt.SbtScalariform.ScalariformKeys
