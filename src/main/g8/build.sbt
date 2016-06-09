@@ -5,6 +5,7 @@ organization := "$organization$"
 version := "$version$"
 
 fork := true
+coverageEnabled := true
 
 import scalariform.formatter.preferences._
 import com.typesafe.sbt.SbtScalariform
